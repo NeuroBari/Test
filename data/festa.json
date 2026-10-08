@@ -1,0 +1,65 @@
+{
+  "evento": {
+    "titolo": "Festa Specializzandi Neurologia 2027",
+    "sottotitolo": "Per festeggiare insieme la fine della specializzazione",
+    "data": "2027-06-18",
+    "oraInizio": "19:30",
+    "oraFine": "02:00",
+    "dressCode": "Elegante casual",
+    "contattoOrganizzatori": "Scrivete sul gruppo WhatsApp degli specializzandi",
+    "note": "I dati di questa pagina sono di esempio: modificate il file data/festa.json per inserire quelli reali."
+  },
+
+  "luogo": {
+    "nome": "Villa Esempio",
+    "indirizzo": "Via Roma 1, 00100 Roma (RM)",
+    "lat": 41.9028,
+    "lon": 12.4964,
+    "comeArrivare": "Parcheggio interno gratuito. In alternativa, bus 64 fermata 'Esempio'.",
+    "linkMappa": "https://www.openstreetmap.org/?mlat=41.9028&mlon=12.4964#map=17/41.9028/12.4964"
+  },
+
+  "programma": [
+    { "ora": "19:30", "titolo": "Arrivo e aperitivo", "descrizione": "Welcome drink in giardino" },
+    { "ora": "20:30", "titolo": "Cena", "descrizione": "Buffet con menù vegetariano disponibile" },
+    { "ora": "22:00", "titolo": "Consegna del regalo e discorsi", "descrizione": "Momento ufficiale con i professori" },
+    { "ora": "22:30", "titolo": "Taglio della torta", "descrizione": "" },
+    { "ora": "23:00", "titolo": "Musica e balli", "descrizione": "DJ set fino a chiusura" }
+  ],
+
+  "persone": [
+    { "nome": "Mario Rossi", "ruolo": "specializzando", "anno": "V anno", "rsvp": "si", "accompagnatori": 1 },
+    { "nome": "Giulia Bianchi", "ruolo": "specializzando", "anno": "V anno", "rsvp": "si", "accompagnatori": 0 },
+    { "nome": "Luca Verdi", "ruolo": "specializzando", "anno": "IV anno", "rsvp": "forse", "accompagnatori": 0 },
+    { "nome": "Sara Neri", "ruolo": "specializzando", "anno": "III anno", "rsvp": "attesa", "accompagnatori": 0 },
+    { "nome": "Prof. Anna Gialli", "ruolo": "invitato", "anno": "Direttrice della Scuola", "rsvp": "si", "accompagnatori": 1 },
+    { "nome": "Dott. Paolo Blu", "ruolo": "invitato", "anno": "Tutor", "rsvp": "no", "accompagnatori": 0 }
+  ],
+
+  "regalo": {
+    "descrizione": "Regalo collettivo per la Direttrice della Scuola (da definire insieme).",
+    "destinatario": "Prof. Anna Gialli",
+    "obiettivo": 600,
+    "quotaSuggerita": 20,
+    "scadenza": "2027-05-31",
+    "mostraImportiIndividuali": false,
+    "metodiPagamento": [
+      { "tipo": "Bonifico", "dettagli": "IBAN: IT00 X000 0000 0000 0000 0000 000 – intestato a Mario Rossi – causale: Regalo festa 2027" },
+      { "tipo": "Satispay / PayPal", "dettagli": "Al tesoriere Mario Rossi (numero sul gruppo WhatsApp)" },
+      { "tipo": "Contanti", "dettagli": "Direttamente al tesoriere in reparto" }
+    ],
+    "contributi": [
+      { "nome": "Mario Rossi", "importo": 20, "data": "2026-10-01" },
+      { "nome": "Giulia Bianchi", "importo": 20, "data": "2026-10-02" },
+      { "nome": "Luca Verdi", "importo": 30, "data": "2026-10-05" }
+    ],
+    "spese": [
+      { "voce": "Acconto regalo", "importo": 50, "data": "2026-10-06" }
+    ]
+  },
+
+  "moduli": {
+    "rsvp": "",
+    "contributo": ""
+  }
+}

@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Festa Specializzandi Neurologia 2027</title>
+  <meta name="description" content="Organizzazione della festa degli specializzandi di Neurologia 2027: programma, luogo, partecipanti e raccolta fondi per il regalo.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav">
+      <a href="#evento">Evento</a>
+      <a href="#programma">Programma</a>
+      <a href="#luogo">Luogo</a>
+      <a href="#partecipanti">Partecipanti</a>
+      <a href="#regalo">Regalo</a>
+    </nav>
+    <div class="hero-content">
+      <p class="eyebrow">Scuola di Specializzazione in Neurologia</p>
+      <h1 id="titolo">Festa Specializzandi 2027</h1>
+      <p id="sottotitolo" class="lead"></p>
+      <p id="data-evento" class="hero-date"></p>
+      <div id="countdown" class="countdown" aria-live="polite"></div>
+    </div>
+  </header>
+
+  <main>
+    <p id="errore" class="alert" hidden></p>
+
+    <section id="evento" class="card">
+      <h2>L'evento</h2>
+      <dl class="info-grid" id="info-evento"></dl>
+      <p id="note-evento" class="muted"></p>
+    </section>
+
+    <section id="programma" class="card">
+      <h2>Programma</h2>
+      <ol class="timeline" id="timeline"></ol>
+    </section>
+
+    <section id="luogo" class="card">
+      <h2>Luogo</h2>
+      <div class="luogo-grid">
+        <div>
+          <h3 id="luogo-nome"></h3>
+          <p id="luogo-indirizzo"></p>
+          <p id="luogo-arrivo" class="muted"></p>
+          <p><a id="luogo-link" class="btn" target="_blank" rel="noopener">Apri la mappa</a></p>
+        </div>
+        <iframe id="mappa" title="Mappa del luogo della festa" loading="lazy"></iframe>
+      </div>
+    </section>
+
+    <section id="partecipanti" class="card">
+      <h2>Partecipanti e invitati</h2>
+      <div class="stats" id="stats-persone"></div>
+      <div class="toolbar">
+        <input type="search" id="cerca" placeholder="Cerca per nome…" aria-label="Cerca per nome">
+        <select id="filtro-ruolo" aria-label="Filtra per ruolo">
+          <option value="">Tutti</option>
+          <option value="specializzando">Specializzandi</option>
+          <option value="invitato">Invitati</option>
+        </select>
+        <select id="filtro-rsvp" aria-label="Filtra per risposta">
+          <option value="">Ogni risposta</option>
+          <option value="si">Confermati</option>
+          <option value="forse">Forse</option>
+          <option value="attesa">In attesa</option>
+          <option value="no">Non vengono</option>
+        </select>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Nome</th><th>Ruolo</th><th>Note</th><th>+1</th><th>Risposta</th></tr></thead>
+          <tbody id="tabella-persone"></tbody>
+        </table>
+      </div>
+      <p id="link-rsvp"></p>
+    </section>
+
+    <section id="regalo" class="card">
+      <h2>Raccolta fondi per il regalo</h2>
+      <p id="regalo-descrizione"></p>
+      <div class="progress-box">
+        <div class="progress-labels">
+          <span id="raccolto"></span>
+          <span id="obiettivo" class="muted"></span>
+        </div>
+        <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" id="progress">
+          <div class="progress-bar" id="progress-bar"></div>
+        </div>
+      </div>
+      <div class="stats" id="stats-regalo"></div>
+
+      <h3>Come contribuire</h3>
+      <ul class="metodi" id="metodi"></ul>
+      <p id="link-contributo"></p>
+
+      <div class="due-col">
+        <div>
+          <h3>Chi ha già contribuito</h3>
+          <ul class="lista" id="contributi"></ul>
+        </div>
+        <div>
+          <h3>Spese sostenute</h3>
+          <ul class="lista" id="spese"></ul>
+        </div>
+      </div>
+      <h3>Ancora da versare</h3>
+      <p class="muted">Specializzandi confermati o in forse che non risultano ancora tra i contributi.</p>
+      <ul class="chips" id="mancanti"></ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Pagina gestita dagli specializzandi · i dati si aggiornano modificando <code>data/festa.json</code></p>
+  </footer>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
